@@ -9,8 +9,8 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.container{
-  min-height:100%;
+.container {
+  min-height: 100%;
   overflow: hidden;
 }
 
@@ -37,7 +37,7 @@ body {
   #icon-container {
     display: inline-block;
     font-size: 64px;
-    padding-right:8px;
+    padding-right: 8px;
   }
   #title {
     display: inline-block;
@@ -50,5 +50,33 @@ body {
   img {
     border-radius: 1000px;
     width: 80%;
+  }
+}
+
+#technologies {
+  display:relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  img {
+    width: 30%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  #mongodb{
+    margin-top: -20px;
+  }
+  #nodejs{
+    margin-top: -34px;
+  }
+}
+
+#minor-technologies {
+  display:relative;
+  text-align: center;
+  img {
+    width: 13%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
