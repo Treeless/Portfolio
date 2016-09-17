@@ -9,12 +9,12 @@
 
     //Compiles scss files to css
     gulp.task('style', function() {
-        del.sync('./css/app.css');
+        del.sync('./css/main.css');
 
         gulp.src('**/*.scss', {
                 cwd: './src'
             })
-            .pipe(concat('app.scss'))
+            .pipe(concat('main.scss'))
             .pipe(sass().on('error', function(err) {
                 console.log("SASS ERROR: " + err.message);
             }))
