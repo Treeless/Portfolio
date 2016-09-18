@@ -1,6 +1,11 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="angularjs, develop websites, web designer, for hire, remote" />
+  <title>Matthew Rowlandson - Full Stack Developer</title>
   <link href="css/main.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether.min.css" />
@@ -8,6 +13,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/6e337e38f1.js"></script>
+  <script>
+  //Date thing
+  $(document).ready(function() {
+    $('#current-year').text(new Date().getFullYear());
+  });
+  </script>
 </head>
 
 <body>
@@ -23,9 +34,9 @@
           </div>
         </div>
         <div id="social-links" class="pull-right">
-          <div><a href="https://www.twitter/mattrowlandson"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
-          <div><a href="https://github.com/Treeless"><i class="fa fa-github" aria-hidden="true"></i></a></div>
-          <div><a href="https://ca.linkedin.com/in/matthewrowlandson"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+          <div><a href="https://www.twitter.com/mattrowlandson" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+          <div><a href="https://github.com/Treeless" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+          <div><a href="https://ca.linkedin.com/in/matthewrowlandson" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </div>
@@ -34,7 +45,12 @@
     <div class="row">
       <div class="col-md-4">
         <div id="profile-pic-container">
-          <img src="img/profile_pic.jpg" />
+          <div>
+            <img src="img/profile_pic.jpg" />
+          </div>
+          <div>
+            <span><i class="fa fa-map-marker" id="map-marker" aria-hidden="true"></i> Ontario, Canada</span>
+          </div>
         </div>
       </div>
       <div class="col-md-8">
@@ -46,26 +62,70 @@
     <div class="row">
       <div class="col-md-12">
         <h2>Technologies</h2>
-        <!-- Tech section? -->
-        <!-- JavaScript Frameworks (AngularJS 1.*, MongoDB, NodeJS)-->
         <div id="technologies">
-          <img id="angular" src="img/angularjs.svg" />
-          <img id="mongodb" src="img/mongodb.png" />
-          <img id="nodejs" src="img/nodejs.svg" />
+          <a href="https://angularjs.org" target="_blank"><img id="angular" src="img/angularjs.svg" /></a>
+          <a href="https://www.mongodb.com" target="_blank"><img id="mongodb" src="img/mongodb.png" /></a>
+          <a href="https://nodejs.org" target="_blank"><img id="nodejs" src="img/nodejs.svg" /></a>
         </div>
         <div id="minor-technologies">
-          <img id="bower" src="img/bower.png" />
-          <img id="firebase" src="img/firebase.svg" />
-          <img id="gulp" src="img/gulp.svg" />
-          <img id="mocha" src="img/mocha.svg" />
-          <img id="sass" src="img/sass.svg" />
-          <img id="ubuntu" src="img/ubuntu.png" />
+          <a href="https://bower.io/" target="_blank"><img id="bower" src="img/bower.png" /></a>
+          <a href="https://firebase.google.com/" target="_blank"><img id="firebase" src="img/firebase.svg" /></a>
+          <a href="http://gulpjs.com/" target="_blank"><img id="gulp" src="img/gulp.svg" /></a>
+          <a href="https://mochajs.org/" target="_blank"><img id="mocha" src="img/mocha.svg" /></a>
+          <a href="http://sass-lang.com/" target="_blank"><img id="sass" src="img/sass.svg" /></a>
+          <a href="http://www.ubuntu.com/" target="_blank"><img id="ubuntu" src="img/ubuntu.png" /></a>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <h2>Projects</h2>
+        <div id="projects-panel">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <img class="card-img-top" src="img/placeholder_red.svg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Party Tyme Treats</h4>
+                  <a href="#" class="btn btn-primary">See Website</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img class="card-img-top" src="img/placeholder_blue.svg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Bob and Joes Barber Shop</h4>
+                  <a href="#" class="btn btn-primary">See Application</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img class="card-img-top" src="img/placeholder_red.svg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Frank's Bistro</h4>
+                  <a href="#" class="btn btn-primary">See Website</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img class="card-img-top" src="img/placeholder_blue.svg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Northern Reef Aquatics</h4>
+                  <a href="#" class="btn btn-primary">See Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12" style="text-align:center;">
+              <i class="fa fa-arrow-up"></i>
+              <p>THE ABOVE PROJECTS ARE STRICTLY PLACEHOLDER CONTENT</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -74,7 +134,7 @@
       </div>
     </div>
     <footer>
-      Built using <a href="http://v4-alpha.getbootstrap.com">bootstrap 4</a>, Sass, Gulp
+      Matthew Rowlandson &copy <span id="current-year">2016</span>
     </footer>
   </div>
 </body>

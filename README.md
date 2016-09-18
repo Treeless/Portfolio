@@ -24,6 +24,8 @@ Email Address: matt@fyrespark.com
 Location: Ontario, Canada
 Say that im open to remote work, relocation or space travel. ;)
 
+DOMAIN: matthewrowlandson.com
+
 
 # Other Project Ideas
 * KETO microsite.
