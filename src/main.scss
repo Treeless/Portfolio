@@ -21,6 +21,10 @@ body {
   padding-bottom: 15px;
 }
 
+h2 {
+  padding-bottom: 15px;
+}
+
 // Apply to all h tags
 @for $index from 1 to 6 {
   h#{$index} {
@@ -49,7 +53,11 @@ body {
   #title {
     display: inline-block;
     position: relative;
-    top: -8px;
+    top: 9px;
+    h1 {
+      margin-bottom: 2px;
+    }
+    span {}
   }
 }
 
@@ -93,7 +101,7 @@ body {
 
 #map-marker {
   font-size: 24px;
-  color: rgb(255, 25, 25);
+  color: #c14935;
 }
 
 #projects-panel {
@@ -101,9 +109,47 @@ body {
     background-color: $darkerBackgroundColor;
     border: 1px solid $darkerFontColor;
     color: $fontColor;
-    min-height: 280px;
+    min-height: 300px;
     .card-img-top {
       width: 100%;
     }
+  }
+}
+
+#availability-container {
+  text-align: center;
+  #availability-tagline {
+    font-size: 18px;
+    i {
+      font-size: 22px;
+    }
+    #remote {
+      i {
+        color: lightyellow;
+      }
+    }
+    #relocation {
+      i {
+        color: lightblue;
+      }
+    }
+    #space-travel {
+      i {
+        color: lightpink;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#contact-container{
+  font-size: 18px;
+  i {
+    font-size: 24px;
   }
 }
