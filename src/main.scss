@@ -19,6 +19,12 @@ body {
 .row {
   padding-top: 15px;
   padding-bottom: 15px;
+  overflow: hidden;
+}
+
+.row [class*="col-"] {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
 }
 
 h2 {
@@ -110,6 +116,7 @@ h2 {
     border: 1px solid $darkerFontColor;
     color: $fontColor;
     min-height: 300px;
+    min-width: 175px;
     .card-img-top {
       width: 100%;
     }
@@ -147,9 +154,13 @@ footer {
   text-align: center;
 }
 
-#contact-container{
+#contact-container {
   font-size: 18px;
   i {
     font-size: 24px;
   }
+}
+
+#message {
+  margin-top: 5px;
 }
