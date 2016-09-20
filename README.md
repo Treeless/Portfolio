@@ -1,8 +1,5 @@
 Things to work on:
- Setup proper padding and margins for the different sections
  About me write up
- Projects (Hide this section until I create some projects (the blog etc))
-
 
 DOMAIN: matthewrowlandson.com
 

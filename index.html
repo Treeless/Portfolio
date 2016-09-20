@@ -14,9 +14,28 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/6e337e38f1.js"></script>
   <script>
-  //Date thing
   $(document).ready(function() {
+    var animationInProgress = false;
+
+    //Date thing
     $('#current-year').text(new Date().getFullYear());
+
+    // Contact Scroll to 
+    $('#contact-link').on('click', function() {
+      if (!animationInProgress) {
+        animationInProgress = true;
+        $('html,body').animate({
+          scrollTop: $("#contact-container").offset().top
+        });
+        // Shake email icon
+        $('#email-envelope').addClass('shake yellow');
+
+        setTimeout(function() {
+          $("#email-envelope").removeClass('shake yellow');
+          animationInProgress = false;
+        }, 3000);
+      }
+    });
   });
   </script>
 </head>
@@ -61,8 +80,9 @@
       </div>
       <div class="col-md-8">
         <h2>About Me</h2>
-        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc., li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilit&aacute; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.</p>
-        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc., li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilit&aacute; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.</p>
+        <p>If your looking for an innovative, curious and creative software developer. Look no further. I am quite knowledgable in application design, web application development and website development. I really enjoy learning new technologies and exploring better ways of creating products for clients.</p>
+        <p>I started my education at Georgian College taking the Computer Programmer Analyst course; creating a foundation for my programming skills. From there, I've worked at numerous organizations in the IT space, including: The Department of Defense, One More Story Games and gShift. I have spent the last number of years tailoring my skillset and learning more about small business and software development.</p>
+        <p>If you have a website project you would like to discuss, <a href="#" id="contact-link">lets talk about it</a>.</p>
       </div>
     </div>
     <div class="row">
@@ -139,7 +159,7 @@
         <h2>Contact</h2>
         <div id="contact-container">
           <p>Have some work that needs done or some code cleaned up? Drop me an email.</p>
-          <span><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:matt@fyrespark.com">matt@fyrespark.com</a></span>
+          <span><i id="email-envelope" class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:matt@fyrespark.com">matt@fyrespark.com</a></span>
         </div>
       </div>
     </div>
