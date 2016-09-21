@@ -48,6 +48,22 @@
         }, 3000);
       }
     });
+
+    // Activate Rocket
+    var rocket = $('#rocket');
+    var rocketFire = $('#rocket-fire');
+    rocket.on('click', function() {
+      // Add class launch-rocket
+      rocket.addClass('launch-rocket');
+      setTimeout(function() {
+        rocketFire.removeClass('hidden');
+
+        setTimeout(function() {
+          rocketFire.addClass('hidden');
+          rocket.removeClass('launch-rocket');
+        }, 4000);
+      }, 950);
+    });
   });
   </script>
   <script>
@@ -203,7 +219,7 @@
     </div>
     <footer>
       <div id="availability-container">
-        <span id="availability-tagline">Available for <span id="remote">remote work <i class="fa fa-laptop" aria-hidden="true"></i></span>, <span id="relocation">relocation <i class="fa fa-home" aria-hidden="true"></i></span> or <span id="space-travel">space travel <i class="fa fa-rocket" aria-hidden="true"></i></span>.</span>
+        <span id="availability-tagline">Available for <span id="remote">remote work <i class="fa fa-laptop" aria-hidden="true"></i></span>, <span id="relocation">relocation <i class="fa fa-home" aria-hidden="true"></i></span> or <span id="space-travel">space travel <i class="fa fa-rocket" id="rocket" aria-hidden="true"><img id="rocket-fire" class="hidden" src="img/rocket_fire.gif"/></i></span>.</span>
       </div>
       Matthew Rowlandson &copy <span id="current-year">2016</span>
     </footer>

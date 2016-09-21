@@ -166,22 +166,45 @@ footer {
 }
 
 @-webkit-keyframes shake {
-  0% { -webkit-transform: rotate(0deg); }
-  10% { -webkit-transform: rotate(-6deg); }
-  20% { -webkit-transform: rotate(6deg); }
-  30% { -webkit-transform: rotate(0deg); }
-  40% { -webkit-transform: rotate(6deg); }
-  50% { -webkit-transform: rotate(-6deg); }
-  60% { -webkit-transform: rotate(0deg); }
-  70% { -webkit-transform: translate(2px, 1px) rotate(-6deg); }
-  80% { -webkit-transform: translate(-1px, -1px) rotate(6deg); }
-  90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-  100% { -webkit-transform: translate(1px, -2px) rotate(-6deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-6deg);
+  }
+  20% {
+    -webkit-transform: rotate(6deg);
+  }
+  30% {
+    -webkit-transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(6deg);
+  }
+  50% {
+    -webkit-transform: rotate(-6deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(2px, 1px) rotate(-6deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(6deg);
+  }
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-6deg);
+  }
 }
+
 .shake {
   -webkit-animation-name: shake;
   -webkit-animation-duration: 0.8s;
-  -webkit-transform-origin:50% 50%;
+  -webkit-transform-origin: 50% 50%;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -189,4 +212,37 @@ footer {
 .yellow {
   color: #ffffe0;
   opacity: .8;
+}
+
+@-webkit-keyframes launch {
+  30% {
+    -webkit-transform: rotate(-42deg)
+  }
+  100% {
+    -webkit-transform: translateY(-3309%) rotate(-42deg);
+  }
+}
+
+.launch-rocket {
+  -webkit-animation-name: launch;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+#rocket {
+  position: relative;
+}
+
+#rocket-fire {
+  position: absolute;
+  width: 15px;
+  transform: rotate(210deg);
+  bottom: -16px;
+  left: -9px;
+  z-index: -1;
+}
+
+.hidden {
+  display: none;
 }
