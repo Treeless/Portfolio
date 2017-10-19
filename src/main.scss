@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Poiret+One';
+
 $backgroundColor: rgb(21, 27, 30);
 $darkerBackgroundColor: rgb(28, 31, 22);
 $fontColor: rgb(85, 109, 124);
@@ -254,4 +255,90 @@ footer {
 
 .hidden {
   display: none;
+}
+
+#events-container {
+  .career-event {
+    background-color: rgba(128, 128, 128, 0.25);
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 12px;
+    width: 120px;
+    height: 100px;
+    margin: 10px;
+    color: white;
+    text-align:center;
+
+    #position {
+      font-size: 12px;
+    }
+
+    .date-container {
+      position: absolute;
+      top: -28px;
+      padding: 3px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .info-container {
+      text-align: center;
+      vertical-align: top;
+      display: inline-block;
+      width: 100px;
+    }
+  }
+}
+
+.georgian {
+  #place {
+    color: #1867BA;
+  }
+  #position {
+    color: forestgreen;
+  }
+  img {
+    width: 20px;
+  }
+}
+
+.trentu {
+  #place{
+    color: #C6D6C8;
+  }
+  #position{
+    color: lightblue;
+  }
+  img {
+    width: 20px;
+  }
+}
+
+.gshift {
+  #place {
+    border-radius: 4px;
+    padding: 3px;
+  }
+  #the-g {
+    color: #57565B;
+  }
+  #the-shift {
+    color: #E12826;
+  }
+}
+
+.omsg{
+  #place{
+    color: #FFC600;
+  }
+  #position{}
+}
+
+#info-icon-container {
+  color: lightgray;
+  font-size: 20px;
+  bottom: 0;
+  position:absolute;
+  transform: translateX(40px);
 }
