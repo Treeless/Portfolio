@@ -267,7 +267,7 @@ footer {
     border: 1px solid gray;
     border-radius: 12px;
     width: 170px;
-    height: 100px;
+    height: 115px;
     margin: 10px;
     color: white;
     text-align:center;
@@ -287,7 +287,7 @@ footer {
       text-align: center;
       vertical-align: top;
       display: inline-block;
-      width: 100px;
+      width: 90%;
     }
   }
 }
@@ -339,7 +339,7 @@ footer {
 #info-icon-container {
   color: lightgray;
   font-size: 20px;
-  bottom: 0;
-  position:absolute;
-  transform: translateX(40px);
+      position: absolute;
+    bottom: 10px;
+    left: 75px
 }
