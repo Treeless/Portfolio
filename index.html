@@ -4,18 +4,19 @@
 <head>
   <meta charset="utf-8" lang="en" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Matthew Rowlandson. Innovative programmer mainly using MongoDB, AngularJS, and NodeJS. Aiming to work with new technologies and develop quality work for clients" />
-  <meta property="og:title" content="Matthew Rowlandsons Full Stack Developer" />
+  <meta name="keywords" content="Matthew Rowlandson, Programmer, Developer, MEAN stack, for hire, web design, web application design, graduate, software development, agile, scrum, project management" />
+  <meta name="description" content="Matthew Rowlandson. Innovative programmer. Main focus is to work with new technologies and develop quality work for clients" />
+  <meta property="og:title" content="Matthew Rowlandson - Full Stack Developer" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://www.matthewrowlandson.com/profile_pic.jpg" />
-  <meta property="og:url" content="http://www.matthewrowlandson.com" />
-  <meta property="og:description" content="Matthew Rowlandson. Building cool things with the MEAN stack" />
+  <meta property="og:image" content="https://www.matthewrowlandson.com/profile_pic.jpg" />
+  <meta property="og:url" content="https://www.matthewrowlandson.com" />
+  <meta property="og:description" content="Showcase and portfolio site. Building innovative and interesting software" />
   <meta property="fb:admins" content="1467096642" />
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="http://www.matthewrowlandson.com/">
-  <meta name="twitter:title" content="Full Stack Developer - Website Portfolio">
-  <meta name="twitter:description" content="Portfolio of Matthew Rowlandson. A software engineer who mainly codes in MongoDB, AngularJS, and NodeJS.">
-  <meta name="twitter:image" content="http://www.matthewrowlandson.com/profile_pic.jpg">
+  <meta name="twitter:url" content="https://www.matthewrowlandson.com/">
+  <meta name="twitter:title" content="Matthew Rowlandson - Full Stack Developer">
+  <meta name="twitter:description" content="Showcase and portfolio site. Building innovative and interesting software">
+  <meta name="twitter:image" content="https://www.matthewrowlandson.com/profile_pic.jpg">
   <title>Matthew Rowlandson - Full Stack Web Developer</title>
   <link rel="author" href="https://plus.google.com/u/0/112561683915963417936" />
   <link href="./css/main.css" rel="stylesheet" type="text/css" />
@@ -26,7 +27,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/6e337e38f1.js"></script>
   <script>
-  $(function () {
+  $(function() {
     $('[data-toggle="tooltip"]').tooltip()
   });
   </script>
@@ -46,10 +47,16 @@
         });
         // Shake email icon
         $('#email-envelope').addClass('shake yellow');
+        setTimeout(function() {
+          $('#email-link').tooltip('show');
+        }, 1000);
 
         setTimeout(function() {
           $("#email-envelope").removeClass('shake yellow');
           animationInProgress = false;
+          setTimeout(function() {
+            $('#email-link').tooltip('hide');
+          }, 500);
         }, 3000);
       }
     });
@@ -112,7 +119,7 @@
           <div id="nav-header">
             <div id="title" class="verticalalign">
               <h1>Matthew Rowlandson</h1>
-              <span id="tagline">Full Stack Web Developer - <span style="color: lightyellow;">Available for Hire!</span></span>
+              <h2 id="tagline">Full Stack Web Developer - <span style="color: lightyellow;">Available for Hire!</span></h2>
             </div>
             <div id="icon-container">
               <i class="fa fa-code" aria-hidden="true"></i>
@@ -154,7 +161,7 @@
       </div>
       <div class="col-md-8">
         <h2>About Me</h2>
-        <p>If you're looking for an innovative, self-learning and creative software developer. Look no further. I am quite knowledgeable in application design, web application development and website development. I really enjoy learning new technologies and exploring better ways of creating products for clients.</p>
+        <p>If you're looking for an innovative, self-learning and creative software developer. Look no further. I am quite knowledgeable in application design, web application development and website and app development. I really enjoy learning new technologies and exploring better ways of creating products for clients.</p>
         <p>I started my education at Georgian College taking the Computer Programmer Analyst course, creating a foundation for my programming skills. From there, I've worked at numerous organizations in the IT space, including: The Department of Defence, One More Story Games and gShift. I have spent the last few years tailoring my skillset and learning more about small business and software development.</p>
         <p>I am currently finishing up my Computer Science degree at <a href="www.trentu.ca" title="Trent University Website">Trent University</a>. Expanding my skillset and researching new technologies.</p>
         <p>If you have a software or website project you would like to discuss, <a href="#" id="contact-link">lets talk about it</a>.</p>
@@ -286,7 +293,7 @@
         <h2>Contact</h2>
         <div id="contact-container">
           <p>Do you have an application or website that you need work done on? Feel free to drop me an email.</p>
-          <span><i id="email-envelope" class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:matt@fyrespark.com" title="Send me an email" data-toggle="tooltip" data-placement="bottom" >matt@fyrespark.com</a></span>
+          <span><i id="email-envelope" class="fa fa-envelope-o" aria-hidden="true"></i> <a id="email-link" href="mailto:matt@fyrespark.com" title="Send me an email" data-toggle="tooltip" data-placement="bottom" >matt@fyrespark.com</a></span>
         </div>
       </div>
     </div>

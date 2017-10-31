@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Poiret+One';
+@import 'https://fonts.googleapis.com/css?family=Poiret+One';
 
 $backgroundColor: rgb(21, 27, 30);
 $darkerBackgroundColor: rgb(28, 31, 22);
@@ -9,7 +9,6 @@ body {
   background-color: $backgroundColor !important;
   height: 100%;
   color: $fontColor !important;
-  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .container {
@@ -30,6 +29,11 @@ body {
 
 h2 {
   padding-bottom: 15px;
+}
+
+#tagline {
+  font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif !important;
+  font-size: 18px;
 }
 
 // Apply to all h tags
