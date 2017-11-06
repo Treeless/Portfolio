@@ -32,7 +32,7 @@ h2 {
 }
 
 #tagline {
-  font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif !important;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
   font-size: 18px;
 }
 
@@ -345,4 +345,8 @@ footer {
   position: absolute;
   bottom: 10px;
   left: 75px
+}
+
+.center {
+  text-align: center;
 }
