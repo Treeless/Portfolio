@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Blog
-subtitle:
-description:
+title: Both sides of the door
+subtitle: Developer, adventurer, and aspiring entrepeneur
+description: Here I write about what projects I'm working on indoors and also talk about some of my outdoor adventures
 author: Matthew Rowlandson
-language:
-timezone:
+language: en
+timezone: est
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://blog.matthewrowlandson.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
