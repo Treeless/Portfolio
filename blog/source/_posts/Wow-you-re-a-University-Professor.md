@@ -1,7 +1,7 @@
 ---
 title: 'Wow, you''re a University Professor?'
 date: 2017-12-01 17:50:10
-tags: criticism
+tags: ["criticism", "school"]
 category: TrentUniversity
 ---
 
