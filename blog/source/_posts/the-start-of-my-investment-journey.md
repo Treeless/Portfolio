@@ -19,3 +19,4 @@ If you're interested in investing and want to open a brokerage account with Ques
 -Matt
 
 <em>Note: Any affiliate links throughout any of my content help provide me with a little bit of income for me to keep my costs down. They cost you nothing :)</em>
+<!-- TODO AFFILIATE LINK -->
