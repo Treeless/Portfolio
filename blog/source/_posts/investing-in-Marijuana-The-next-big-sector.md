@@ -34,6 +34,68 @@ Gambles:
 -----------------------------
 THC.CN - THC Biomed INTL Lt
 
+<!-- TradingView Widget BEGIN -->
+Chart:
+----------------------------
+
+<div id="tv-medium-widget-d61a2"></div>
+
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+
+<script type="text/javascript">
+new TradingView.MediumWidget({
+  "container_id": "tv-medium-widget-d61a2",
+  "symbols": [
+    [
+      "Canopy",
+      "TSX:WEED|1y"
+    ],
+    [
+      "Aurora",
+      "TSX:ACB|1y"
+    ],
+    [
+      "Aphira",
+      "TSX:APH|1y"
+    ],
+    [
+      "Organigram",
+      "TSXV:OGI|1y"
+    ],
+    [
+      "Cronos",
+      "TSXV:MJN|1y"
+    ],
+    [
+      "Supreme",
+      "TSXV:FIRE|1y"
+    ],
+    [
+      "Emerald",
+      "TSXV:EMH|1y"
+    ],
+    [
+      "Abattis",
+      "OTC:ATTBF|1y"
+    ],
+    [
+      "THC",
+      "OTC:THCBF|1y"
+    ]
+  ],
+  "greyText": "Quotes by",
+  "gridLineColor": "#e9e9ea",
+  "fontColor": "#83888D",
+  "underLineColor": "#dbeffb",
+  "trendLineColor": "#4bafe9",
+  "width": "100%",
+  "height": "400",
+  "locale": "en"
+});
+</script>
+
+<!-- TradingView Widget END -->
+
 Anything beyond the big three do come with a bit of a risk, however I believe longterm, most of if not all licensed producers will do well once legalization comes to fruition. The demand for products will speak for itself; there won't be enough weed to go around. Jump on board the investment train before its too late! Pick a few of the largest LPs you can find and invest what you can before the marijuana gains train leaves the station and the price per share is too high to invest.
 
 Looking to trade? Need a stock broker? I use Questrade. Click <a href="https://www.questrade.com">here</a> to get $50 worth of free commission trades!
