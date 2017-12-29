@@ -5,7 +5,7 @@
 # Site
 title: The Rowlandson Experience
 subtitle: Developer, adventurer, and aspiring entrepeneur
-description: Here I write about what projects I'm working, my interests and experiences in and around the world of IT.
+description: Here I write about the projects I'm working on, my general interests as well as my experiences in and around the world of IT.
 author: Matthew Rowlandson
 language: en
 timezone: est
@@ -42,7 +42,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -51,7 +51,7 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
