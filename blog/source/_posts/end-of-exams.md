@@ -1,7 +1,7 @@
 ---
 title: Exams and the final judgment
 date: 2017-12-20 09:21:53
-tags: ["exams", "school"]
+tags: ["exams", "school", "university", "computer science"]
 category: TrentUniversity
 ---
 

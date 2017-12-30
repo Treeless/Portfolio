@@ -21,7 +21,7 @@ new TradingView.MediumWidget({
   "fontColor": "#83888D",
   "underLineColor": "#dbeffb",
   "trendLineColor": "#4bafe9",
-  "width": 1000,
+  "width": "100%",
   "height": 400,
   "locale": "en"
 });
@@ -29,8 +29,17 @@ new TradingView.MediumWidget({
 
 <!-- TradingView Widget END -->
 
-This is a stock I've had in my portfolio for a while and one that I'm still going to be holding onto for another long while
+This is a stock I've had in my portfolio for a while and is one that I'm still going to be holding onto for another long while.
 
+Here are a few things make this company very promising to me:
+* 2016, and 2017 financial audits are going to be completed and a Form 10 will be submitted to SEC early 2018 - <a href="http://www.ammx.net/profiles/investor/ResLibraryView.asp?ResLibraryID=86470&GoTopage=1&Category=1051&BzID=1512&G=730">AMMX Press Release</a>. This will allow the company to get off the OTC and move to a better OTCBB exchange if the share price increases past 1 cent.
+* Consistent business, the company has been making profit on a regular basis and is one of the few penny stocks that has a solid business base.
+  * Equipment Orders (forklifts, cargo handlers <small>etc</small>)
+  * Rental Agreements
+  * Maintenance Orders (with the US government and other companies)
+* Future additional revenue stream via Oshkosh Defense, LLC partnership in Nigeria <blockquote cite="http://www.ammx.net/profiles/investor/ResLibraryView.asp?ResLibraryID=83462&GoTopage=3&Category=1051&BzID=1512&G=730">AmeraMex CEO Lee Hamre commented, “We are pleased to be representing Oshkosh Defense’s tactical military vehicles. AmeraMex has developed strong relationships with government agencies within Western African countries including Nigeria.   We believe offering an inclusive product line of advanced performance tactical military vehicles from a well-known manufacturer of durable and reliable military tactical equipment will expand our potential within Nigeria and other African countries where we have existing relationships.”<footer>— <a href="http://www.ammx.net/profiles/investor/ResLibraryView.asp?ResLibraryID=83462&GoTopage=3&Category=1051&BzID=1512&G=730">AMMX Press Release</a></footer></blockquote>
+
+[TODO TALK ABOUT FUTURE GROWTH, WHATS HOLDING IT BACK,]
 
 
 
