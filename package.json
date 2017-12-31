@@ -17,6 +17,7 @@
     "gulp-webserver": "^0.9.1"
   },
   "dependencies": {
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "hexo-generator-sitemap": "^1.2.0"
   }
 }
