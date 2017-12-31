@@ -39,6 +39,8 @@ Here are a few things make this company very promising to me:
   * Maintenance Orders (with the US government and other companies)
 * Future additional revenue stream via Oshkosh Defense, LLC partnership in Nigeria <blockquote cite="http://www.ammx.net/profiles/investor/ResLibraryView.asp?ResLibraryID=83462&GoTopage=3&Category=1051&BzID=1512&G=730">AmeraMex CEO Lee Hamre commented, “We are pleased to be representing Oshkosh Defense’s tactical military vehicles. AmeraMex has developed strong relationships with government agencies within Western African countries including Nigeria.   We believe offering an inclusive product line of advanced performance tactical military vehicles from a well-known manufacturer of durable and reliable military tactical equipment will expand our potential within Nigeria and other African countries where we have existing relationships.”<footer>— <a href="http://www.ammx.net/profiles/investor/ResLibraryView.asp?ResLibraryID=83462&GoTopage=3&Category=1051&BzID=1512&G=730">AMMX Press Release</a></footer></blockquote>
 
+Past increases in ,test
+
 [TODO TALK ABOUT FUTURE GROWTH, WHATS HOLDING IT BACK,]
 
 
