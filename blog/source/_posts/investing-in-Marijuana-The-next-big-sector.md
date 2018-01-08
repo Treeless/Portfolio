@@ -98,7 +98,7 @@ new TradingView.MediumWidget({
 
 Anything beyond the big three do come with a bit of a risk, however I believe longterm, most of, if not all licensed producers, will do well once legalization comes to fruition. The demand for products will speak for itself; there won't be enough weed to go around. Jump on board the investment train before its too late! Pick a few of the largest LPs you can find and invest what you can before the marijuana gains train leaves the station and the price per share is too high to invest.
 
-Looking to trade? Need a stock broker? I use Questrade. Click <a href="https://www.questrade.com">here</a> to get $50 worth of free commission trades!
+Looking to trade? Need a stock broker? I use Questrade. Click <a href="http://www.questrade.com?refid=itey6i10">here</a> to get $50 worth of free commission trades!
 <!-- TODO AFFILIATE LINK -->
 -Matt
 
