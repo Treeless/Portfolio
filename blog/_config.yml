@@ -78,3 +78,7 @@ theme: chan
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+#OTHER OPTIONS
+sitemap:
+  path: sitemap.xml
