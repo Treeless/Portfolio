@@ -2,7 +2,7 @@
 
 $backgroundColor: rgb(21, 27, 30);
 $darkerBackgroundColor: rgb(28, 31, 22);
-$fontColor: rgb(85, 109, 124);
+$fontColor: rgb(136,145,151);
 $darkerFontColor: rgb(55, 62, 44);
 html,
 body {
@@ -74,6 +74,7 @@ h2 {
 #profile-pic-container {
   img {
     border-radius: 1000px;
+    border: 1px solid;
     width: 80%;
   }
   div {
@@ -343,7 +344,7 @@ footer {
   color: lightgray;
   font-size: 20px;
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 75px
 }
 
@@ -351,7 +352,7 @@ footer {
   text-align: center;
 }
 
-#blog_link {
+#blog_link,#resume_link {
   font-size: 30px !important;
   font-family: Poiret One, cursive!important;
 }

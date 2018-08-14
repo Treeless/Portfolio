@@ -114,7 +114,7 @@
           <div id="nav-header">
             <div id="title" class="verticalalign">
               <h1>Matthew Rowlandson</h1>
-              <h2 id="tagline">Full Stack Web Developer - <span style="color: lightyellow;">Available for Hire!</span></h2>
+              <h2 id="tagline">Full Stack Software Developer - <span style="color: lightyellow;">Available for Hire!</span></h2>
             </div>
             <div id="icon-container">
               <i class="fa fa-code" aria-hidden="true"></i>
@@ -124,7 +124,10 @@
         <div class="col-md-6" style="text-align: center;">
           <div id="social-links">
             <div class="link-block">
-              <a id="blog_link" rel="noopener" data-toggle="tooltip" data-placement="bottom" title="Matt's Blog" href="https://blog.matthewrowlandson.com" onclick="trackOutboundLink('https://blog.matthewrowlandson.com'); return false;"><i class="fa fa-edit"></i> Blog</a>
+              <a data-toggle="tooltip" data-placement="bottom" title="Download Matt's Resume" id="resume_link" href="/docs/MatthewRowlandson_2018_Resume.pdf" download><i class="fa fa-download" aria-hidden="true"></i>Resume</a>
+            </div>
+            <div class="link-block">
+              <a id="blog_link" rel="noopener" data-toggle="tooltip" data-placement="bottom" title="Matt's Blog" href="https://blog.matthewrowlandson.com" onclick="trackOutboundLink('https://blog.matthewrowlandson.com'); return false;"><i class="fa fa-edit"></i>Blog</a>
             </div>
             <div class="link-block">
               <a rel="noopener" data-toggle="tooltip" data-placement="bottom" title="Matt's Github Account" href="https://github.com/Treeless" target="_blank"><i class="fa fa-github" aria-hidden="true" onclick="trackOutboundLink('https://github.com/Treeless'); return false;"></i></a>
@@ -153,9 +156,12 @@
             <img alt="Picture of Matthew Rowlandson" src="img/profile_pic.jpg" />
           </div>
           <div>
-            <span><i class="fa fa-map-marker" id="map-marker" aria-hidden="true"></i> Ontario, Canada</span>
+            <span><i class="fa fa-map-marker" id="map-marker" aria-hidden="true"></i> Relocating to Vancouver, Canada</span>
             <div>
-              <span title="Eastern Standard Time Zone"><i class="fa fa-clock-o" id="clock" aria-hidden="true"></i> EST</span>
+              <span><i class="fa fa-calendar" id="map-marker" aria-hidden="true"></i> By September 1st 2018</span>
+            </div>
+            <div>
+              <span title="Eastern Standard Time Zone"><i class="fa fa-clock-o" id="clock" aria-hidden="true"></i> EST to PST</span>
             </div>
           </div>
         </div>
@@ -183,6 +189,27 @@
             </div>
           </div>
           <div class="career-event">
+            <div class="info-container gshift">
+              <div id="place"><span id="the-g">g</span><span id="the-shift">Shift</span></div>
+              <div id="position">Intermediate Software Developer</div>
+              <div id="info-icon-container"><span class="fa fa-desktop"></span></div>
+            </div>
+          </div>
+          <div class="career-event">
+            <div class="info-container omsg">
+              <div id="place">One More Story Games</div>
+              <div id="position">Co-Founder & Senior Software Developer</div>
+              <div id="info-icon-container"><span class="fa fa-code"></span></div>
+            </div>
+          </div>
+          <div class="career-event">
+            <div class="info-container departmentofdefense">
+              <div id="place">Department Of Defense</div>
+              <div id="position">Technical Support Specialist</div>
+              <div id="info-icon-container" style="left: 50px;"><span class="fa fa-phone"></span> -> <span class="fa fa-cogs"></span></div>
+            </div>
+          </div>
+          <div class="career-event">
             <div class="info-container georgian">
               <div id="place">Georgian College</div>
               <div id="position">
@@ -192,27 +219,9 @@
               <div id="info-icon-container"><img alt="Georgian College logo" src="/img/georgian-college-logo.png" /></div>
             </div>
           </div>
-          <div class="career-event">
-            <div class="info-container departmentofdefense">
-              <div id="place">Department Of Defense</div>
-              <div id="position">Technical Support Specialist</div>
-              <div id="info-icon-container"><span class="fa fa-phone"></span></div>
-            </div>
-          </div>
-          <div class="career-event">
-            <div class="info-container omsg">
-              <div id="place">One More Story Games</div>
-              <div id="position">Co-Founder & Team Lead</div>
-              <div id="info-icon-container"><span class="fa fa-code"></span></div>
-            </div>
-          </div>
-          <div class="career-event">
-            <div class="info-container gshift">
-              <div id="place"><span id="the-g">g</span><span id="the-shift">Shift</span></div>
-              <div id="position">Intermediate Web Developer</div>
-              <div id="info-icon-container"><span class="fa fa-desktop"></span></div>
-            </div>
-          </div>
+        </div>
+        <div class="center">
+          <small>(Left to right, most recent)</small>
         </div>
       </div>
     </div>
@@ -220,20 +229,20 @@
       <div class="col-md-12">
         <h2>Technologies</h2>
         <div id="technologies">
+          <a href="https://angularjs.org" target="_blank" rel="noopener"><img id="angular" src="img/angularjs.svg" alt="AngularJS logo" /></a>
+          <a href="https://www.mongodb.com" target="_blank" rel="noopener"><img id="mongodb" src="img/mongodb.png" alt="MongoDB logo" /></a>
+          <a href="https://nodejs.org" target="_blank" rel="noopener"><img id="nodejs" src="img/nodejs.svg" alt="NodeJS logo" /></a>
+          <div id="minor-technologies">
+            <a href="https://bower.io/" target="_blank" rel="noopener"><img id="bower" src="img/bower.png" alt="BowerJS logo" /></a>
+            <a href="http://gulpjs.com/" target="_blank" rel="noopener"><img id="gulp" src="img/gulp.svg" alt="GulpJS logo" /></a>
+            <a href="https://mochajs.org/" target="_blank" rel="noopener"><img id="mocha" src="img/mocha.svg" alt="MochaJS logo" /></a>
+            <a href="http://sass-lang.com/" target="_blank" rel="noopener"><img id="sass" src="img/sass.svg" alt="Sass logo" /></a>
+            <a href="http://www.ubuntu.com/" target="_blank" rel="noopener"><img id="ubuntu" src="img/ubuntu.png" alt="Ubuntu logo" /></a>
+          </div>
           <div id="platforms">
             <a href="https://www.namecheap.com/?utm_source=SAS&utm_medium=Affiliate&utm_campaign=1646756&affnetwork=sas" target="_blank" rel="noopener" title="My favourite domain registrar"><img id="namecheap" src="img/Namecheap.png" alt="Namecheap logo" /></a>
             <a href="https://m.do.co/c/9ca14c36ff1f" target="_blank" rel="noopener" title="Signup to get $10 in credit"><img id="digitalocean" src="img/digitalocean.svg" alt="Digital Ocean logo" /></a>
           </div>
-          <a href="https://angularjs.org" target="_blank" rel="noopener"><img id="angular" src="img/angularjs.svg" alt="AngularJS logo" /></a>
-          <a href="https://www.mongodb.com" target="_blank" rel="noopener"><img id="mongodb" src="img/mongodb.png" alt="MongoDB logo" /></a>
-          <a href="https://nodejs.org" target="_blank" rel="noopener"><img id="nodejs" src="img/nodejs.svg" alt="NodeJS logo" /></a>
-        </div>
-        <div id="minor-technologies">
-          <a href="https://bower.io/" target="_blank" rel="noopener"><img id="bower" src="img/bower.png" alt="BowerJS logo" /></a>
-          <a href="http://gulpjs.com/" target="_blank" rel="noopener"><img id="gulp" src="img/gulp.svg" alt="GulpJS logo" /></a>
-          <a href="https://mochajs.org/" target="_blank" rel="noopener"><img id="mocha" src="img/mocha.svg" alt="MochaJS logo" /></a>
-          <a href="http://sass-lang.com/" target="_blank" rel="noopener"><img id="sass" src="img/sass.svg" alt="Sass logo" /></a>
-          <a href="http://www.ubuntu.com/" target="_blank" rel="noopener"><img id="ubuntu" src="img/ubuntu.png" alt="Ubuntu logo" /></a>
         </div>
       </div>
     </div>
@@ -248,9 +257,8 @@
                 <div class="card-block">
                   <h4 class="card-title">FyreSpark</h4>
                   <p>All in one social media app for video games. Bringing gamers together.</p>
-                  <p>State: Under Active Development</p>
-                  <a href="#" class="btn btn-primary disabled">Coming soon</a>
-                  <!-- <a rel="noopener" href="http://www.fyrespark.com?ref=mrps" class="btn btn-primary" title="Navigate to fyrespark.com" target="_blank"><span class="fa fa-link"></span> fyrespark.com</a> -->
+                  <p>State: Live, Under Active Development</p>
+                  <a rel="noopener" href="https://www.fyrespark.com?ref=mrps" class="btn btn-primary" title="Navigate to fyrespark.com" target="_blank"><span class="fa fa-link"></span> fyrespark.com</a>
                 </div>
               </div>
             </div>
@@ -268,21 +276,21 @@
             </div>
             <div class="col-md-3">
               <div class="card">
-                <img class="card-img-top" src="img/placeholder_blue.svg" alt="placeholder image">
+                <img class="card-img-top" src="img/adventureinthebackcountry.png" alt="Adventure In The Backcountry Logo">
                 <div class="card-block">
-                  <h4 class="card-title">Pool & Points (working title)</h4>
-                  <p>Online game where you join 'Pools' of other players. Half of the players have a chance of winning a part of the pot. Who can get the most points?</p>
-                  <p>State: Under Development</p>
-                  <a href="#" class="btn btn-primary disabled">Not public</a>
+                  <h4 class="card-title">Wordpress Blog Development</h4>
+                  <p>Hosting and maintaining AdventureInTheBackcountry blog on a Ubuntu Digital Ocean server</p>
+                  <p>State: Live</p>
+                  <a href="https://www.adventureinthebackcountry.com" class="btn btn-primary"> <span class="fa fa-link"></span> Website Link</a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card">
-                <img class="card-img-top" src="img/placeholder_red.svg" alt="placeholder image">
+                <img class="card-img-top" src="img/placeholder_blue.svg" alt="placeholder image">
                 <div class="card-block">
-                  <h4 class="card-title">Trent Game Development Club Website</h4>
-                  <p>Trent University's very own Game Development Club Site.</p>
+                  <h4 class="card-title">Pool & Points (working title)</h4>
+                  <p>Online game where you join 'Pools' of other players. Half of the players have a chance of winning a part of the pot. Who can get the most points?</p>
                   <p>State: Under Development</p>
                   <a href="#" class="btn btn-primary disabled">Not public</a>
                 </div>
