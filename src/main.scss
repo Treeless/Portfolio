@@ -2,8 +2,9 @@
 
 $backgroundColor: rgb(21, 27, 30);
 $darkerBackgroundColor: rgb(28, 31, 22);
-$fontColor: rgb(136,145,151);
+$fontColor: rgb(136, 145, 151);
 $darkerFontColor: rgb(55, 62, 44);
+
 html,
 body {
   background-color: $backgroundColor !important;
@@ -45,26 +46,32 @@ h2 {
 
 #social-links {
   padding: 15px;
+
   .link-block {
     display: inline-block;
     padding: 5px 10px;
   }
+
   a {
+    color: $fontColor;
     font-size: 42px;
   }
 }
 
 #nav-header {
   display: inline-block;
+
   #icon-container {
     display: inline-block;
     font-size: 64px;
     padding-left: 8px;
   }
+
   #title {
     display: inline-block;
     position: relative;
     top: 9px;
+
     h1 {
       margin-bottom: 2px;
     }
@@ -77,6 +84,7 @@ h2 {
     border: 1px solid;
     width: 80%;
   }
+
   div {
     text-align: center;
   }
@@ -87,14 +95,17 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+
   img {
     width: 30%;
     padding-left: 3%;
     padding-right: 3%;
   }
+
   #mongodb {
     margin-top: -20px;
   }
+
   #nodejs {
     margin-top: -34px;
   }
@@ -103,6 +114,7 @@ h2 {
 #minor-technologies {
   display: relative;
   text-align: center;
+
   img {
     width: 13%;
     padding-left: 2%;
@@ -122,6 +134,7 @@ h2 {
     color: $fontColor;
     min-height: 300px;
     min-width: 175px;
+
     .card-img-top {
       width: 100%;
     }
@@ -130,21 +143,26 @@ h2 {
 
 #availability-container {
   text-align: center;
+
   #availability-tagline {
     font-size: 18px;
+
     i {
       font-size: 22px;
     }
+
     #remote {
       i {
         color: lightyellow;
       }
     }
+
     #relocation {
       i {
         color: lightblue;
       }
     }
+
     #space-travel {
       i {
         color: lightpink;
@@ -161,6 +179,7 @@ footer {
 
 #contact-container {
   font-size: 18px;
+
   i {
     font-size: 24px;
   }
@@ -174,33 +193,43 @@ footer {
   0% {
     -webkit-transform: rotate(0deg);
   }
+
   10% {
     -webkit-transform: rotate(-6deg);
   }
+
   20% {
     -webkit-transform: rotate(6deg);
   }
+
   30% {
     -webkit-transform: rotate(0deg);
   }
+
   40% {
     -webkit-transform: rotate(6deg);
   }
+
   50% {
     -webkit-transform: rotate(-6deg);
   }
+
   60% {
     -webkit-transform: rotate(0deg);
   }
+
   70% {
     -webkit-transform: translate(2px, 1px) rotate(-6deg);
   }
+
   80% {
     -webkit-transform: translate(-1px, -1px) rotate(6deg);
   }
+
   90% {
     -webkit-transform: translate(2px, 2px) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translate(1px, -2px) rotate(-6deg);
   }
@@ -223,6 +252,7 @@ footer {
   30% {
     -webkit-transform: rotate(-42deg)
   }
+
   100% {
     -webkit-transform: translateY(-7009%) rotate(-42deg);
   }
@@ -263,6 +293,7 @@ footer {
 
 #events-container {
   text-align: center;
+
   .career-event {
     background-color: rgba(128, 128, 128, 0.25);
     position: relative;
@@ -287,6 +318,7 @@ footer {
       margin-left: 5px;
       margin-right: 5px;
     }
+
     .info-container {
       text-align: center;
       vertical-align: top;
@@ -300,11 +332,19 @@ footer {
   #place {
     color: #BFD2E1;
   }
+
   #position {
     color: forestgreen;
   }
+
   img {
     width: 20px;
+  }
+}
+
+.freelance {
+  #place {
+    color: #cf76f5;
   }
 }
 
@@ -318,9 +358,11 @@ footer {
   #place {
     color: #C6D6C8;
   }
+
   #position {
     color: lightblue;
   }
+
   img {
     width: 20px;
   }
@@ -331,9 +373,11 @@ footer {
     border-radius: 4px;
     padding: 3px;
   }
+
   #the-g {
     color: #57565B;
   }
+
   #the-shift {
     color: #E12826;
   }
@@ -343,6 +387,7 @@ footer {
   #place {
     color: #FFC600;
   }
+
   #position {}
 }
 
@@ -364,11 +409,16 @@ footer {
   text-align: center;
 }
 
-#blog_link, #resume_link {
+#blog_link,
+#resume_link {
   font-size: 30px !important;
-  font-family: Poiret One, cursive!important;
+  font-family: Poiret One, cursive !important;
 }
 
-img#vuejs  {
+img#vuejs {
   width: 20%;
+}
+
+.smaller-icon {
+  font-size: 24px !important;
 }
