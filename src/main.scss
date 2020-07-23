@@ -235,12 +235,64 @@ footer {
   }
 }
 
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-6deg);
+  }
+
+  20% {
+    transform: rotate(6deg);
+  }
+
+  30% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(6deg);
+  }
+
+  50% {
+    transform: rotate(-6deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  70% {
+    transform: translate(2px, 1px) rotate(-6deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(6deg);
+  }
+
+  90% {
+    transform: translate(2px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-6deg);
+  }
+}
+
 .shake {
   -webkit-animation-name: shake;
   -webkit-animation-duration: 0.8s;
   -webkit-transform-origin: 50% 50%;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
+
+  animation-name: shake;
+  animation-duration: 0.8s;
+  transform-origin: 50% 50%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .yellow {
@@ -258,11 +310,26 @@ footer {
   }
 }
 
+@keyframes launch {
+  30% {
+    transform: rotate(-42deg)
+  }
+
+  100% {
+    transform: translateY(-7009%) rotate(-42deg);
+  }
+}
+
 .launch-rocket {
   -webkit-animation-name: launch;
   -webkit-animation-duration: 5s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
+
+  animation-name: launch;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 
 #rocket {
