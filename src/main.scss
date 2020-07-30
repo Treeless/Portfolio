@@ -132,8 +132,17 @@ h2 {
     background-color: $darkerBackgroundColor;
     border: 1px solid $darkerFontColor;
     color: $fontColor;
-    min-height: 300px;
+    min-height: 485px;
     min-width: 175px;
+
+    .btn {
+      margin-bottom: 15px;
+      margin: 10px;
+      display: block;
+    }
+    p,h4 {
+      padding:5px;
+    }
 
     .card-img-top {
       width: 100%;
@@ -366,7 +375,7 @@ footer {
     position: relative;
     vertical-align: top;
     display: inline-block;
-    // border: 1px solid gray;
+    border: 1px solid $darkerFontColor;
     border-radius: 5px;
     width: 160px;
     height: 115px;
@@ -503,9 +512,4 @@ img#reactjs {
 
 #email-envelope {
   font-size: 22px;
-}
-
-.history-container {
-  padding: 20px;
-  width: 100%;
 }
