@@ -161,61 +161,50 @@
       </div>
     </div>
   </header>
-  <div class="container">
-    <div class="row">
+  <div id="content-container" class="container-fluid">
+    <div class="row" >
       <div class="col-md-4">
-        <div id="profile-pic-container">
-          <div>
-            <img alt="Picture of Matthew Rowlandson" src="img/profile_pic.jpg" />
+        <div class="">
+          <div class="row" id="profile-pic-container">
+            <div>
+              <img alt="Picture of Matthew Rowlandson" src="img/profile_pic.jpg" />
+            </div>
+            <div>
+              <span><i class="fa fa-map-marker" id="map-marker" aria-hidden="true"></i> Ontario. Canada</span>
+              <div>
+                <span>Full Stack Software Developer <a href="">@Freelance</a></span>
+              </div>
+              <div>
+                <span title="Eastern Standard Timezone"><i class="fa fa-clock-o" id="clock" aria-hidden="true"></i> EST</span>
+              </div>
+            </div>
           </div>
-          <div>
-            <span><i class="fa fa-map-marker" id="map-marker" aria-hidden="true"></i> Ontario. Canada</span>
-            <div>
-              <span>Full Stack Software Developer <a href="">@Freelance</a></span>
-            </div>
-            <div>
-              <span title="Eastern Standard Timezone"><i class="fa fa-clock-o" id="clock" aria-hidden="true"></i> EST</span>
-            </div>
+          <div class="row">
+              <h2 class="center"><i alt="my toolbox" title="My current toolset" class="fa fa-wrench"></i> Current Toolset</h2>
+              <div id="technologies">
+                <a data-toggle="tooltip" title="ReactJS my current favourite frontend framework" href="https://reactjs.org/" target="_blank" rel="noopener"><img id="reactjs" src="img/reactjs.svg" alt="ReactJS logo" /></a>
+                <a data-toggle="tooltip" title="MongoDB is my favourite DB system, although I have worked with countless others" href="https://www.mongodb.com" target="_blank" rel="noopener"><img id="mongodb" src="img/mongodb.png" alt="MongoDB logo" /></a>
+                <a data-toggle="tooltip" title="favourite serverside js framework" href="https://nodejs.org" target="_blank" rel="noopener"><img id="nodejs" src="img/nodejs.svg" alt="NodeJS logo" /></a>
+                <div id="minor-technologies">
+                  <a data-toggle="tooltip" title="I use git as my code source control" href="https://github.com/Treeless" target="_blank" rel="noopener"><img id="git" src="img/git.png" alt="Git logo" /></a>
+                  <a data-toggle="tooltip" title="I use gulp for development/build task automation" href="http://gulpjs.com/" title="" target="_blank" rel="noopener"><img id="gulp" src="img/gulp.svg" alt="GulpJS logo" /></a>
+                  <a data-toggle="tooltip" title="I use mochaJS and other testing technologies to ensure quality code across the board" href="https://mochajs.org/" target="_blank" rel="noopener"><img id="mocha" src="img/mocha.svg" alt="MochaJS logo" /></a>
+                  <a data-toggle="tooltip" title="Compiled CSS Style Sheet framework" href="http://sass-lang.com/" target="_blank" rel="noopener"><img id="sass" src="img/sass.svg" alt="Sass logo" /></a>
+                  <a data-toggle="tooltip" title="Developer operations experience using Linux/Ubuntu/CentOS" href="http://www.ubuntu.com/" target="_blank" rel="noopener"><img id="ubuntu" src="img/ubuntu.png" alt="Ubuntu logo" /></a>
+                </div>
+                <div id="platforms">
+                  <a data-toggle="tooltip" href="https://www.namecheap.com/?utm_source=SAS&utm_medium=Affiliate&utm_campaign=1646756&affnetwork=sas" target="_blank" rel="noopener" title="My favourite domain registrar"><img id="namecheap" src="img/Namecheap.png" alt="Namecheap logo" /></a>
+                  <a data-toggle="tooltip" href="https://m.do.co/c/9ca14c36ff1f" target="_blank" rel="noopener" title="My go to cloud server platform"><img id="digitalocean" src="img/digitalocean.svg" alt="Digital Ocean logo" /></a>
+                </div>
+              </div>
+          </div>
+          <div class="row center">
+            <h2>Contact</h2>
+            <i id="email-envelope" class="fa fa-envelope-o" aria-hidden="true"></i> <a id="email-link" href="mailto:matt@fyrespark.com" title="Send me an email" data-toggle="tooltip" data-placement="bottom">matt@fyrespark.com</a>
           </div>
         </div>
       </div>
       <div class="col-md-8">
-        <!-- <h1>What I can build for you</h1>
-        <table>
-          <tr>
-            <td>
-              <img src="/img/profile_pic.jpg" width=140/>
-              <h2>Websites</h2>
-            </td>
-            <td>
-              <img src="/img/profile_pic.jpg" width=140/>
-              <h2>Apps</h2>
-            </td>
-            <td>
-              <img src="/img/profile_pic.jpg" width=140/>
-              <h2>Wordpress</h2>
-            </td>
-            <td>
-              <img src="/img/profile_pic.jpg" width=140/>
-              <h2>Revamps</h2>
-            </td>
-            <td>
-              <img src="/img/profile_pic.jpg" width=140/>
-              <h2>Testing</h2>
-            </td>
-          </tr>
-        </table> -->
-        <!-- <h2>Websites</h2>
-        <p>I can build you responsive HTML sites using HTML5, and CSS3. While ensuring high ranking on SEO.</p>
-
-        <h2>CMS</h2>
-        <p>I can setup and maintain your next wordpress application or build you a custom solution that suites your needs.</p>
-
-        <h2>Full Stack applications</h2>
-        <p>I can build you well written complex custom software with a responsive javascript frontend coupled with a nodejs backend and any database you need. Functionality I can provide you with any requirements your business needs.</p>
-
-        <h2>Looking for an permanent remote employee?</h2>
-        <p>I'm always interested in working alongside interesting companies to provide the best software solutions while maintaining an existing software stack.</p> -->
         <h2>Details on my Skillset</h2>
         <p>I am a software developer, with a knack for making great software.</p>
         <p>Full stack web development is my forte'; I create quality web applications for my clients. I'm used to creating systems with restful APIs and microservices, using nodejs as a backend. I use ReactJS or any modern frontend javascript framework for front end ensuring responsive and modern looking design. I am very knowledgable on application design, agile development, and test my applications using automated unit testing. I know my way around dev operations and host my client's apps on Ubuntu servers, using apache or nginx as a webserver. I host applications and maintain them through cloud services like Digital Ocean or AWS.</p>
@@ -242,7 +231,7 @@
         </ul>
 
         <h2>Reach out</h2>
-        <p>Inquire with me by sending an email to <a href="email:matt@fyrespark.com" target="_blank">matt@fyrespark.com</a>, let me know what you're looking for. We can setup a phone call right away to find out how I can help you get what you need, done right.</p>
+        <p>Inquire with me by sending an <a href="mailto:matt@fyrespark.com" target="_blank" title="matt@fyrespark.com" data-toggle="tooltip">email</a>, and let me know what you're looking for and how I can best help you and your business.</p>
       </div>
     </div>
     <div class="row">
@@ -306,7 +295,7 @@
           </div>
         </div>
         <div class="center">
-          <small>(Left to right, most recent)</small>
+          <small>(most recent, left to right)</small>
           <div>
             <small>See details on <a href="https://www.linkedin.com/matthewrowlandson">LinkedIn</a></small>
           </div>
@@ -315,29 +304,8 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <h2>Technologies</h2>
-        <div id="technologies">
-          <a title="ReactJS my current favourite frontend framework" href="https://reactjs.org/" target="_blank" rel="noopener"><img id="reactjs" src="img/reactjs.svg" alt="ReactJS logo" /></a>
-          <a title="MongoDB is my favourite DB system, although I have worked with countless others" href="https://www.mongodb.com" target="_blank" rel="noopener"><img id="mongodb" src="img/mongodb.png" alt="MongoDB logo" /></a>
-          <a title="favourite serverside js framework" href="https://nodejs.org" target="_blank" rel="noopener"><img id="nodejs" src="img/nodejs.svg" alt="NodeJS logo" /></a>
-          <div id="minor-technologies">
-            <a title="I use git as my source control" href="https://github.com/Treeless" target="_blank" rel="noopener"><img id="git" src="img/git.png" alt="Git logo" /></a>
-            <a title="I use gulp for development/build task automation" href="http://gulpjs.com/" title="" target="_blank" rel="noopener"><img id="gulp" src="img/gulp.svg" alt="GulpJS logo" /></a>
-            <a title="I use mochaJS and other testing technoligies to ensure quality code across the board" href="https://mochajs.org/" target="_blank" rel="noopener"><img id="mocha" src="img/mocha.svg" alt="MochaJS logo" /></a>
-            <a title="Compiled CSS Style Sheet framework" href="http://sass-lang.com/" target="_blank" rel="noopener"><img id="sass" src="img/sass.svg" alt="Sass logo" /></a>
-            <a title="Developer operations experience using Linux/Ubuntu/CentOS" href="http://www.ubuntu.com/" target="_blank" rel="noopener"><img id="ubuntu" src="img/ubuntu.png" alt="Ubuntu logo" /></a>
-          </div>
-          <div id="platforms">
-            <a href="https://www.namecheap.com/?utm_source=SAS&utm_medium=Affiliate&utm_campaign=1646756&affnetwork=sas" target="_blank" rel="noopener" title="My favourite domain registrar"><img id="namecheap" src="img/Namecheap.png" alt="Namecheap logo" /></a>
-            <a href="https://m.do.co/c/9ca14c36ff1f" target="_blank" rel="noopener" title="Signup to get $10 in credit"><img id="digitalocean" src="img/digitalocean.svg" alt="Digital Ocean logo" /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
         <h2>Projects</h2>
-        <div id="projects-panel">
+        <div id="projects-panel" class="container-fluid">
           <div class="row">
             <div class="col-md-3">
               <div class="card">
@@ -389,7 +357,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-md-12 center">
         <h2>Contact</h2>
         <div id="contact-container">
@@ -397,12 +365,12 @@
           <p>Feel free to drop me an email. <span><i id="email-envelope" class="fa fa-envelope-o" aria-hidden="true"></i> <a id="email-link" href="mailto:matt@fyrespark.com" title="Send me an email" data-toggle="tooltip" data-placement="bottom">matt@fyrespark.com</a></span></p>
         </div>
       </div>
-    </div>
+    </div> -->
     <footer>
       <div id="availability-container">
         <span id="availability-tagline">Available for <span id="remote">remote work <i class="fa fa-laptop" aria-hidden="true"></i></span> , <span id="relocation">relocation <i class="fa fa-home" aria-hidden="true"></i></span> or <span id="space-travel">space travel <i class="fa fa-rocket" id="rocket" aria-hidden="true" title="click me" data-toggle="tooltip" data-placement="right"><img id="rocket-fire" class="hidden" src="img/rocket_fire.gif" /></i></span>.</span>
       </div>
-      Matthew Rowlandson &copy <span id="current-year">2016</span>
+      Matthew Rowlandson &copy <span id="current-year">2020</span>
     </footer>
   </div>
 </body>
