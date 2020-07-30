@@ -20,11 +20,11 @@
   <title>Matthew Rowlandson - Full Stack Software Developer</title>
   <link rel="author" href="https://plus.google.com/u/0/112561683915963417936" />
   <link href="./css/main.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether.min.css" />
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/6e337e38f1.js"></script>
   <script>
   $(function() {
@@ -199,8 +199,12 @@
               </div>
           </div>
           <div class="row center">
-            <h2>Contact</h2>
-            <i id="email-envelope" class="fa fa-envelope-o" aria-hidden="true"></i> <a id="email-link" href="mailto:matt@fyrespark.com" title="Send me an email" data-toggle="tooltip" data-placement="bottom">matt@fyrespark.com</a>
+            <div class="col-md-12">
+              <h2>Contact</h2>
+              <div>
+                <i id="email-envelope" class="fa fa-envelope-o" aria-hidden="true"></i> <a id="email-link" href="mailto:matt@fyrespark.com" title="Send me an email" data-toggle="tooltip" data-placement="bottom">matt@fyrespark.com</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -237,7 +241,37 @@
     <div class="row">
       <div class="col-md-12">
         <h2>History</h2>
-        <div id="events-container">
+        <div class="timeline d-none d-md-block">
+          <div class="events">
+            <!-- TODO: Put our existing events in and show the icons on the timeline -->
+            <ol>
+              <ul>
+                <li>
+                  <a href="#0" class="selected">Freelance</a>
+                </li>
+                <li>
+                  <a href="#1">Zaui Software</a>
+                </li>
+                <li>
+                  <a href="#2">Trent University</a>
+                </li>
+                <li>
+                  <a href="#3">gShift</a>
+                </li>
+                <li>
+                  <a href="#4">One More Story Games</a>
+                </li>
+                <li>
+                  <a href="#5">Department of Defense</a>
+                </li>
+                <li>
+                  <a href="#6">Georgian College</a>
+                </li>
+              </ul>
+            </ol>
+          </div>
+        </div>
+        <div id="events-container" class="d-lg-none d-md-none d-sm-block d-xs-block">
           <div class="career-event">
             <div class="info-container freelance">
               <div id="place">Remote Freelance</div>
@@ -293,11 +327,11 @@
               <div id="info-icon-container"><img alt="Georgian College logo" src="/img/georgian-college-logo.png" /></div>
             </div>
           </div>
-        </div>
-        <div class="center">
-          <small>(most recent, left to right)</small>
-          <div>
-            <small>See details on <a href="https://www.linkedin.com/matthewrowlandson">LinkedIn</a></small>
+          <div class="center">
+            <small>(most recent, left to right)</small>
+            <div>
+              <small>See details on <a href="https://www.linkedin.com/matthewrowlandson">LinkedIn</a></small>
+            </div>
           </div>
         </div>
       </div>
