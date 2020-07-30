@@ -366,11 +366,11 @@ footer {
     position: relative;
     vertical-align: top;
     display: inline-block;
-    border: 1px solid gray;
-    border-radius: 12px;
+    // border: 1px solid gray;
+    border-radius: 5px;
     width: 160px;
     height: 115px;
-    margin: 10px;
+    margin: 5px;
     color: white;
     text-align: center;
 
@@ -401,7 +401,7 @@ footer {
   }
 
   #position {
-    color: forestgreen;
+    color: lightgreen;
   }
 
   img {
@@ -442,7 +442,7 @@ footer {
   }
 
   #the-g {
-    color: #57565B;
+    color: #828186;
   }
 
   #the-shift {
@@ -454,8 +454,6 @@ footer {
   #place {
     color: #FFC600;
   }
-
-  #position {}
 }
 
 .departmentofdefense {
@@ -505,4 +503,9 @@ img#reactjs {
 
 #email-envelope {
   font-size: 22px;
+}
+
+.history-container {
+  padding: 20px;
+  width: 100%;
 }
