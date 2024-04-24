@@ -80,9 +80,9 @@ h2 {
 
 #profile-pic-container {
   img {
-    border-radius: 1000px;
+    border-radius: 100px;
     border: 1px solid;
-    width: 65%;
+    width: 70%;
     margin-bottom:10px;
   }
 
@@ -380,8 +380,8 @@ footer {
     display: inline-block;
     border: 1px solid $darkerFontColor;
     border-radius: 5px;
-    width: 160px;
-    height: 115px;
+    width: 180px;
+    height: 135px;
     margin: 5px;
     color: white;
     text-align: center;
@@ -525,6 +525,10 @@ img#reactjs {
   margin-right: 20px;
 }
 
-#email-envelope {
-  font-size: 22px;
+.contact-symbols {
+  font-size: 22px !important;
+}
+
+#canvas {
+  position:fixed;
 }

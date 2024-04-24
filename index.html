@@ -25,6 +25,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/6e337e38f1.js"></script>
+  <script src="./js/particles.js"></script>
   <script>
   $(function() {
     $('[data-toggle="tooltip"]').tooltip()
@@ -102,33 +103,27 @@
   ga('send', 'pageview');
   </script>
   <script>
-  var trackOutboundLink = function(url) {
-    ga('send', 'event', 'outbound', 'click', url, {
-      'transport': 'beacon',
-      'hitCallback': function() {
-        document.location = url;
-      }
-    });
-  }
   </script>
 </head>
 
 <body>
+  <canvas id="canvas"></canvas>
   <header>
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <div id="nav-header">
-            <div id="title" class="verticalalign">
+            <div id="title" class="verticalalign" data-toggle="tooltip" data-placement="bottom" title="Builder of high quality complex software using tools like NodeJs, ReactJs and AWS">
               <h1><i class="fa fa-code" aria-hidden="true"></i> Matthew Rowlandson</h1>
               <div id="current-status">
                 <div>
-                  <h2 id="tagline">Full Stack Software Developer</h2>
+                  <h2 id="tagline">Senior Software Engineer</h2>
                 </div>
-                <div><span>@</span></div>
+                <!-- <div><span>@</span></div> -->
+                 <div><span>|</span></div>
                 <div>
-                  <!-- <h4 id="hire-me"><span title="Capable of building high quality complex software" style="color: lightyellow;">Available for Hire! <i class="fa fa-globe" title="remote"></i></span></h4> -->
-                  <h4 id="hire-me" style="color: lightyellow;"><span title="Building incredible software @Augmentt"><a href="https://www.augmentt.com">Augmentt</a> <i class="fa fa-globe" title="remote"></i></span></h4>
+                  <h4 id="hire-me"><span style="color: lightyellow;">Available for Hire! <i class="fa fa-globe" title="remote"></i></span></h4>
+                  <!-- <h4 id="hire-me" style="color: lightyellow;"><span title="Building incredible software @Augmentt"><a href="https://www.augmentt.com">Augmentt</a> <i class="fa fa-globe" title="remote"></i></span></h4> -->
                 </div>
               </div>
             </div>
@@ -137,24 +132,18 @@
         <div class="col-md-6" style="text-align: center;">
           <div id="social-links">
             <div class="link-block">
-              <a data-toggle="tooltip" data-placement="bottom" title="Download Matt's Resume" id="resume_link" href="/docs/MatthewRowlandson_2020_Resume.pdf" download><i class="fa fa-download smaller-icon" aria-hidden="true"></i> Resume</a>
-            </div>
-            <!-- <div class="link-block">
-              <a id="blog_link" rel="noopener" data-toggle="tooltip" data-placement="bottom" title="Matt's Blog" href="https://blog.matthewrowlandson.com" onclick="trackOutboundLink('https://blog.matthewrowlandson.com'); return false;"><i class="fa fa-edit smaller-icon"></i> Blog</a>
-            </div> -->
-            <div class="link-block">
-              <a rel="noopener" data-toggle="tooltip" data-placement="bottom" title="Matt's Github Account" href="https://github.com/Treeless" target="_blank"><i class="fa fa-github" aria-hidden="true" onclick="trackOutboundLink('https://github.com/Treeless'); return false;"></i></a>
-            </div>
-            <div class="link-block">
-              <a rel="noopener" data-toggle="tooltip" data-placement="bottom" title="Matt's LinkedIn Account" href="https://ca.linkedin.com/in/matthewrowlandson" target="_blank"><i class="fa fa-linkedin" aria-hidden="true" onclick="trackOutboundLink('https://ca.linkedin.com/in/matthewrowlandson'); return false;"></i></a>
-            </div>
-            <div class="link-block">
-              <a rel="noopener" data-toggle="tooltip" data-placement="bottom" title="Matt's Twitter Account" href="http://www.twitter.com/mattrowlz" target="_blank"><i class="fa fa-twitter" aria-hidden="true" onclick="trackOutboundLink('http://www.twitter.com/mattrowlz'); return false;"></i></a>
+              <a rel="noopener" data-toggle="tooltip" data-placement="bottom" title="Matt's Github Account" href="https://github.com/Treeless" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
             </div>
             <div class="link-block">
               <a rel="noopener" href="https://stackoverflow.com/users/3438460/matt?tab=profile" data-toggle="tooltip" data-placement="bottom" title="Matt's Developer Profile on Stack Overflow">
-                <i class="fa fa-stack-overflow" aria-hidden="true" onclick="trackOutboundLink('https://stackoverflow.com/users/3438460/matt?tab=profile'); return false;"></i>
+                <i class="fa fa-stack-overflow" aria-hidden="true"></i>
               </a>
+            </div>
+            <div class="link-block">
+              <a rel="noopener" data-toggle="tooltip" data-placement="bottom" title="Matt's LinkedIn Account" href="https://ca.linkedin.com/in/matthewrowlandson" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <div class="link-block">
+              <a data-toggle="tooltip" data-placement="bottom" title="Download Matt's Resume" id="resume_link" href="/docs/MatthewRowlandson_2024_Resume.pdf" download><i class="fa fa-download smaller-icon" aria-hidden="true"></i> Resume</a>
             </div>
           </div>
         </div>
@@ -175,10 +164,10 @@
               <div>
                 <span><i class="fa fa-map-marker" id="map-marker" aria-hidden="true"></i> Ontario. Canada</span>
                 <div>
-                  <span>Full Stack Software Developer <a href="https://www.augmentt.com" target="_blank">@Augmentt</a></span>
+                  <span>Senior Software Engineer</span>
                 </div>
                 <div>
-                  <span title="Eastern Standard Timezone"><i class="fa fa-clock-o" id="clock" aria-hidden="true"></i> EST</span>
+                  <span title="Eastern Standard Timezone"><i class="fa fa-clock-o" id="clock" aria-hidden="true"></i> EST</span><span> - </span></span><span>Remote (US or CA)</span>
                 </div>
               </div>
             </div>
@@ -206,7 +195,10 @@
             <div class="col-md-12">
               <h2>Contact</h2>
               <div>
-                <i id="email-envelope" class="fa fa-envelope-o" aria-hidden="true"></i> <a id="email-link" href="mailto:matt@fyrespark.com" title="Send me an email" data-toggle="tooltip" data-placement="bottom">matt@fyrespark.com</a>
+                <i class="fa fa-envelope-o contact-symbols" aria-hidden="true"></i> <a id="email-link" href="mailto:matt_94101@live.ca" title="Send me an email" data-toggle="tooltip" data-placement="bottom">matt_94101@live.ca</a>
+              </div>
+              <div>
+                <i class="fa fa-linkedin contact-symbols" aria-hidden="true"></i> <a rel="noopener" data-toggle="tooltip" data-placement="bottom" title="Connect and send me a message on LinkedIn" href="https://ca.linkedin.com/in/matthewrowlandson" target="_blank">matthewrowlandson</a>
               </div>
             </div>
           </div>
@@ -228,15 +220,15 @@
         </ul>
         <h2>Web Development</h2>
         <ul>
-          <li>JavaScript BE: NodeJS (RestfulAPIs, GraphQL)</li>
-          <li>JavaScript FE: AngularJS, ReactJS, JQuery, VueJS, KnockoutJS, BackBoneJS</li>
+          <li>JavaScript Backend: NodeJS (RestfulAPIs, GraphQL)</li>
+          <li>JavaScript Frontend: AngularJS, ReactJS, JQuery, VueJS, KnockoutJS, BackBoneJS</li>
           <li>HTML5, CSS3, responsive design, flexbox</li>
           <li>Preprocessors: HAML, SASS</li>
           <li>Build Tools: GulpJS, webpack, nodemon, npm scripts</li>
           <li>Unit Testing: MochaJS, JestJS</li>
         </ul>
         <h2>Reach out</h2>
-        <p>Inquire with me by sending an <a href="mailto:matt@fyrespark.com" target="_blank" title="matt@fyrespark.com" data-toggle="tooltip">email</a>, and let me know what you're looking for and how I can best help you and your business.</p>
+        <p>Inquire with me by sending an <a href="mailto:matt_94101@live.ca" target="_blank" title="matt_94101@live.ca" data-toggle="tooltip">email</a>, and let me know what you're looking for and how I can best help you and your business.</p>
       </div>
     </div>
     <div class="row">
@@ -246,8 +238,7 @@
           <div class="career-event">
             <div class="info-container augmentt">
               <div id="place">Augmentt</div>
-              <div id="position">Software Developer<br></div>
-              <div>(current)</div>
+              <div id="position">Senior Software Engineer Team Lead - Top code contributor (NodeJS, ReactJS, AWS)<br></div>
               <div id="info-icon-container"><span class="fa fa-globe"></span></div>
             </div>
           </div>
@@ -261,7 +252,7 @@
           <div class="career-event">
             <div class="info-container zaui">
               <div id="place">Zaui Software</div>
-              <div id="position">Full Stack Software Developer<br>(PHP, Javascript)</div>
+              <div id="position">Full Stack Software Developer<br>(PHP, JavaScript)</div>
               <div id="info-icon-container"><span class="fa fa-bus"></span></div>
             </div>
           </div>
@@ -269,7 +260,7 @@
             <div class="info-container trentu">
               <div id="place">Trent University</div>
               <div id="position">
-                <div>Student - 4yr</div>
+                <div>Graduate - 4yr</div>
                 <div>Computing Systems B.Sc /w Honours</div>
               </div>
               <div id="info-icon-container"><img alt="Trent University logo" src="/img/trent-logo.png" /></div>
@@ -315,7 +306,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-md-12">
         <h2>Personal Projects</h2>
         <div id="projects-panel" class="container">
@@ -381,12 +372,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <footer>
       <div id="availability-container">
         <span id="availability-tagline">Available for <span id="remote">remote work <i class="fa fa-laptop" aria-hidden="true"></i></span> , <span id="relocation">relocation <i class="fa fa-home" aria-hidden="true"></i></span> or <span id="space-travel">space travel <i class="fa fa-rocket" id="rocket" aria-hidden="true" title="click me" data-toggle="tooltip" data-placement="right"><img id="rocket-fire" class="hidden" src="img/rocket_fire.gif" /></i></span>.</span>
       </div>
-      Matthew Rowlandson &copy <span id="current-year">2020</span>
+      Matthew Rowlandson &copy <span id="current-year">2024</span>
     </footer>
   </div>
 </body>
