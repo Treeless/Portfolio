@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Poiret+One';
+@import "https://fonts.googleapis.com/css?family=Poiret+One";
 
 $backgroundColor: rgb(21, 27, 30);
 $darkerBackgroundColor: rgb(28, 31, 22);
@@ -40,7 +40,7 @@ h2 {
 // Apply to all h tags
 @for $index from 1 to 6 {
   h#{$index} {
-    font-family: 'Poiret One', cursive !important;
+    font-family: "Poiret One", cursive !important;
   }
 }
 
@@ -50,6 +50,10 @@ h2 {
   .link-block {
     display: inline-block;
     padding: 5px 10px;
+
+    :hover {
+      text-decoration: none;
+    }
   }
 
   a {
@@ -80,10 +84,10 @@ h2 {
 
 #profile-pic-container {
   img {
-    border-radius: 100px;
+    border-radius: 1500px;
     border: 1px solid;
     width: 70%;
-    margin-bottom:10px;
+    margin-bottom: 10px;
   }
 
   div {
@@ -150,6 +154,12 @@ h2 {
     .card-img-top {
       width: 100%;
     }
+  }
+}
+
+.mouseover {
+  &:hover {
+    color: #ffc600;
   }
 }
 
@@ -309,12 +319,12 @@ footer {
 
 .yellow {
   color: #ffffe0;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 @-webkit-keyframes launch {
   30% {
-    -webkit-transform: rotate(-42deg)
+    -webkit-transform: rotate(-42deg);
   }
 
   100% {
@@ -324,7 +334,7 @@ footer {
 
 @keyframes launch {
   30% {
-    transform: rotate(-42deg)
+    transform: rotate(-42deg);
   }
 
   100% {
@@ -409,7 +419,7 @@ footer {
 
 .georgian {
   #place {
-    color: #BFD2E1;
+    color: #bfd2e1;
   }
 
   #position {
@@ -423,7 +433,7 @@ footer {
 
 .augmentt {
   #place {
-    color: #3298FD;
+    color: #3298fd;
   }
 }
 
@@ -433,16 +443,15 @@ footer {
   }
 }
 
-
 .zaui {
   #place {
-    color: #4385F5;
+    color: #4385f5;
   }
 }
 
 .trentu {
   #place {
-    color: #C6D6C8;
+    color: #c6d6c8;
   }
 
   #position {
@@ -465,19 +474,19 @@ footer {
   }
 
   #the-shift {
-    color: #E12826;
+    color: #e12826;
   }
 }
 
 .omsg {
   #place {
-    color: #FFC600;
+    color: #ffc600;
   }
 }
 
 .departmentofdefense {
   #place {
-    color: #D25956;
+    color: #d25956;
   }
 }
 
@@ -486,7 +495,7 @@ footer {
   font-size: 20px;
   position: absolute;
   bottom: 5px;
-  left: 75px
+  left: 75px;
 }
 
 .center {
@@ -512,7 +521,7 @@ img#reactjs {
   font-size: 24px !important;
 }
 
-#current-status>div {
+#current-status > div {
   display: inline-block;
 }
 
@@ -530,5 +539,5 @@ img#reactjs {
 }
 
 #canvas {
-  position:fixed;
+  position: fixed;
 }
