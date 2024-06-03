@@ -1,11 +1,10 @@
-//Original Author: Brandon John-Freso. Tweaks made by Matthew Rowlandson 
 $(function () {
   var W,
     H,
     canvas,
     ctx, //ctx stands for context and is the "curso" of our canvas element.
     particleCount = 200,
-    particles = []; //this is an array which will hold our particles Object/Class
+    particles = [];
 
   W = window.innerWidth;
   H = window.innerHeight;
@@ -88,10 +87,7 @@ $(function () {
     };
     this.draw = function () {
       ctx.save();
-      ctx.translate(
-        this.x + this.radius,
-        this.y + this.radius
-      );
+      ctx.translate(this.x + this.radius, this.y + this.radius);
       ctx.rotate(this.rotation);
       ctx.scale(1, this.scale);
 

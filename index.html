@@ -27,6 +27,7 @@
   <script src="https://use.fontawesome.com/6e337e38f1.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNM42D9TH6"></script>
   <script src="./js/particles.js"></script>
+  <script src="./js/general.js"></script>
   <script>
   $(function() {
     $('[data-toggle="tooltip"]').tooltip()
@@ -46,6 +47,9 @@
 
     //Date thing
     $('#current-year').text(new Date().getFullYear());
+
+    // Years experience
+    $("#years-experience").text(getYearDifference('2015-06-01', new Date()))
 
     // Contact Scroll to 
     $('#contact-link').on('click', function() {
@@ -125,7 +129,7 @@
               <a rel="noopener" data-toggle="tooltip" data-placement="bottom" title="Matt's Github Account" href="https://github.com/Treeless" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
             </div>
             <div class="link-block">
-              <a rel="noopener" href="https://stackoverflow.com/users/3438460/matt?tab=profile" data-toggle="tooltip" data-placement="bottom" title="Matt's Developer Profile on Stack Overflow">
+              <a rel="noopener" href="https://stackoverflow.com/users/3438460/matt?tab=profile" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Matt's Developer Profile on Stack Overflow">
                 <i class="fa fa-stack-overflow" aria-hidden="true"></i>
               </a>
             </div>
@@ -195,27 +199,20 @@
         </div>
       </div>
       <div class="col-md-8">
-        <h2>Details on my Skillset</h2>
-        <p>I am a software developer, with a knack for making great software.</p>
-        <p>Full stack web development is my forte'; I create quality web applications for my clients. I'm used to creating systems with restful APIs and microservices, using nodejs as a backend. I use ReactJS or any modern frontend javascript framework for front end ensuring responsive and modern looking design. I am very knowledgable on application design, agile development, and test my applications using automated unit testing. I know my way around dev operations and host my client's apps on Ubuntu servers, using apache or nginx as a webserver. I host applications and maintain them through cloud services like Digital Ocean or AWS.</p>
+        <h2>Who Am I?</h2>
+        <p>I am a Senior Software Engineer with over <span id="years-experience">8</span> years in the industry. I've got a with a knack for making scalable micro-saas products.</p>
+        <p>Full stack web development is my forte'; I create quality web applications for my clients. I'm used to creating systems with restful APIs and microservices, using NodeJS as a backend. I use ReactJS or any modern frontend Javascript framework for front end ensuring responsive and modern looking design. I am very knowledgable on application design, agile development, and test my applications using automated unit testing. I know my way around dev operations and host my client's apps on serverless Amazon Web Services infrastructure.</p>
         <p>I am a team player, a self starter, and I learn quickly. I take ownership of the software I build. With existing systems, I love to learn about how a software works and am always looking for ways to improve it. I am very much open to mentoring my peers, as I really enjoy sharing what I know.</p>
-        <p>I'm used to working with Git as source control, and communicating over Slack for collaboration. I'm transparent with my work by keeping detailed track of my hours using excel spreadsheets and sharing detailed invoices when working freelance.</p>
-        <h2>Tech Stack</h2>
+        <p>I collaborate through project managemetn software such as JIRA and code source control using Git. Communicating with my peers over Microsoft Teams or Slack across timezones.</p>
+        <h2>My Core Toolset</h2>
         <ul>
-          <li>Languages: JavaScript, PHP, Python, C#, ASP.net, C++, Java, and Ruby.</li>
-          <li>Databases: MongoDB, PostgreSQL, MySQL, Microsoft SQL, and Firebase.</li>
-          <li>Dev-ops: <span class="mouseover" data-toggle="tooltip" data-placement="top" title="Server/less event driven implementation using Lambdas, SQS, S3, SNS, Cloudfront, CodePipeline, Cloudformation, CloudWatch, RDS etc">AWS</span>, Ubuntu/Linux</li>
-          <li>Applications: JIRA, Trello, <a rel="noopener" data-toggle="tooltip" data-placement="bottom" title="Matt's Github Account" href="https://github.com/Treeless" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>, Visual Studio Code</li>
-          <li>Agile Devlopment, Unit testing, Code Documentation, Wikis</li>
-        </ul>
-        <h2>Web Development</h2>
-        <ul>
-          <li>JavaScript Backend: NodeJS (RestfulAPIs, GraphQL)</li>
-          <li>JavaScript Frontend: AngularJS, ReactJS, JQuery, VueJS, KnockoutJS, BackBoneJS</li>
-          <li>HTML5, CSS3, responsive design, flexbox</li>
-          <li>Preprocessors: HAML, SASS</li>
-          <li>Build Tools: GulpJS, webpack, nodemon, npm scripts</li>
-          <li>Unit Testing: MochaJS, JestJS</li>
+          <li>Frontend: ReactJS, AngularJS, Svelte</li>
+          <li>Backend: NodeJS (RestfulAPIs, Microservices), NextJS, Firebase Cloud Functions</li>
+          <li>Databases: mySQL, MongoDB, ELK</li>
+          <li>Build Tools: Vite, GulpJS</li>
+          <li>Testing: JestJS, CypressJS</li>
+          <li>Host Tools: IaC through AWS /w serverless prefered</li>
+          <li>SDLC: Zeplin/Figma, Jira, Git, AWS</li>
         </ul>
         <h2>Reach out</h2>
         <p>Inquire with me by sending an <a href="mailto:matt_94101@live.ca" target="_blank" title="matt_94101@live.ca" data-toggle="tooltip">email</a>, and let me know what you're looking for and how I can best help you and your business.</p>
@@ -223,7 +220,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <h2>History</h2>
+        <h2>Career</h2>
         <div id="events-container">
           <div class="career-event">
             <div class="info-container augmentt">
@@ -296,14 +293,25 @@
         </div>
       </div>
     </div>
-    <!-- <div class="row">
+    <div class="row">
       <div class="col-md-12">
-        <h2>Personal Projects</h2>
+        <h2>Software Projects</h2>
         <div id="projects-panel" class="container">
           <div class="row">
+          <div class="col-md-3">
+              <div class="card">
+                <img class="card-img-top" src="img/under-construction.png" alt="under construction" />
+                <div class="card-block">
+                  <h4 class="card-title">MicroSaaS Base App</h4>
+                  <p>Learning Svelte and Firebase ecosystem alongside Stripe as a foundation for creating MicroSaaS projects that solve real world problems for businesses</p>
+                  <p>Hosting: Firebase</p>
+                  <p>State: Coming Soon</p>
+                </div>
+              </div>
+            </div>
             <div class="col-md-3">
               <div class="card">
-                <img class="card-img-top" src="img/zoanthidsxyz.PNG" alt="zoanthids.xyz - eagle eye zoanthids">
+                <img class="card-img-top" src="img/zoanthidsxyz.PNG" alt="zoanthids.xyz - eagle eye zoanthids"/>
                 <div class="card-block">
                   <h4 class="card-title">Zoanthid Coral Image Recognition (AI)</h4>
                   <p>There are thousands of Zoanthid morphs. I love the coral species and want to create a tool that will identify whatever morph or variation you throw at it through a combination of image recognition and artificial intelligence</p>
@@ -320,18 +328,6 @@
                   </ul>
                   <p>State: Image Curation {1700+ named morphs gathered so far}</p>
                   <a href="https://www.zoanthids.xyz" target="_blank" class="btn btn-primary"><span class="fa fa-link"></span> zoanthids.xyz</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <a href="https://www.fyrespark.com?ref=mrps" target="_blank"><img class="card-img-top" src="img/fyrespark.jpg" alt="fyrespark logo"></a>
-                <div class="card-block">
-                  <h4 class="card-title">FyreSpark</h4>
-                  <p>All in one social media app for video games. Bringing gamers together.</p>
-                  <p>Hosting: Wordpress, Ubuntu [Digital Ocean]</p>
-                  <p>State: Live - 2018 legacy</p>
-                  <a rel="noopener" href="https://www.fyrespark.com?ref=mrps" class="btn btn-primary" title="Navigate to fyrespark.com" target="_blank"><span class="fa fa-link"></span> fyrespark.com</a>
                 </div>
               </div>
             </div>
@@ -362,7 +358,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <footer>
       <div id="availability-container">
         <span id="availability-tagline">Available for <span id="remote">remote work <i class="fa fa-laptop" aria-hidden="true"></i></span> , <span id="relocation">relocation <i class="fa fa-home" aria-hidden="true"></i></span> or <span id="space-travel">space travel <i class="fa fa-rocket" id="rocket" aria-hidden="true" title="click me" data-toggle="tooltip" data-placement="right"><img id="rocket-fire" class="hidden" src="img/rocket_fire.gif" /></i></span>.</span>
