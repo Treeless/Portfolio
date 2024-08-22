@@ -6,5 +6,5 @@ function getYearDifference(date1, date2) {
   const date2Ms = new Date(date2).getTime();
   const diffInMs = Math.abs(date2Ms - date1Ms);
   const diffInYears = diffInMs / msPerYear;
-  return Math.round(diffInYears);
+  return diffInYears;
 }

@@ -4,18 +4,18 @@
 <head>
   <meta charset="utf-8" lang="en" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Matthew Rowlandson, Senior Software Engineer, Team Lead, Full-Stack Developer, NodeJS, ReactJS, AWS, Cloud Solutions, Microservices, Agile, DevOps, Full-Stack Development, JavaScript, Technical Leadership, Scalable Applications, Software Development, Remote Work, Software Engineer" />
+  <meta name="keywords" content="Matthew Rowlandson, Senior Software Architect, Full-Stack Developer, NodeJS, ReactJS, AWS, Cloud Solutions, Microservices, Agile, DevOps, Full-Stack Development, JavaScript, Technical Leadership, Scalable Applications, Software Development, Remote Work, Software Engineer" />
   <meta name="description" content="Matthew Rowlandson is an accomplished Senior Software Engineer and Team Lead with over ten years of experience in full-stack development. Specializing in scalable, well-tested applications, microservices, and modular code using NodeJS, ReactJS, and AWS infrastructure. Known for hands-on leadership, mentoring, and delivering high-quality software solutions." />
-  <meta property="og:title" content="Matthew Rowlandson - Senior Software Engineer & Team Lead" />
+  <meta property="og:title" content="Matthew Rowlandson - Senior Software Architect" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.matthewrowlandson.com/profile_pic.jpg" />
   <meta property="og:url" content="https://www.matthewrowlandson.com" />
-  <meta property="og:description" content="Explore the professional portfolio of Matthew Rowlandson, an accomplished Senior Software Engineer and Team Lead with over ten years of experience in full-stack development, specializing in NodeJS, ReactJS, and AWS infrastructure." />
+  <meta property="og:description" content="Explore the professional portfolio of Matthew Rowlandson, an accomplished Senior Software Architect with over ten years of experience in full-stack development, specializing in NodeJS, ReactJS, and AWS infrastructure." />
   <meta property="fb:admins" content="1467096642" />
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="https://www.matthewrowlandson.com/">
-  <meta name="twitter:title" content="Matthew Rowlandson - Senior Software Engineer & Team Lead">
-  <meta name="twitter:description" content="Discover the expertise of Matthew Rowlandson, a Senior Software Engineer and Team Lead with extensive experience in full-stack development, NodeJS, ReactJS, and AWS infrastructure.">
+  <meta name="twitter:title" content="Matthew Rowlandson - Senior Software Architect">
+  <meta name="twitter:description" content="Discover the expertise of Matthew Rowlandson, a Senior Software Architect with extensive experience in full-stack development, NodeJS, ReactJS, and AWS infrastructure.">
   <meta name="twitter:image" content="https://www.matthewrowlandson.com/profile_pic.jpg">
   <title>Matthew Rowlandson - Senior Team Lead Software Engineer</title>
   <link rel="author" href="https://plus.google.com/u/0/112561683915963417936" />
@@ -49,7 +49,9 @@
     $('#current-year').text(new Date().getFullYear());
 
     // Years experience
-    $("#years-experience").text(getYearDifference('2015-06-01', new Date()))
+    const yearsDiff = getYearDifference('2015-06-01', new Date())
+    $("#years-experience").text(Math.round(yearsDiff))
+    $('#years-career').text(yearsDiff.toFixed(2))
 
     // Contact Scroll to 
     $('#contact-link').on('click', function() {
@@ -113,11 +115,12 @@
               <h1><i class="fa fa-code" aria-hidden="true"></i> Matthew Rowlandson</h1>
               <div id="current-status">
                 <div>
-                  <h2 id="tagline" data-toggle="tooltip" data-placement="bottom" title="Builder of high quality complex software using tools like NodeJs, ReactJs and AWS">Senior Software Engineer Team Lead</h2>
+                  <h2 id="tagline" data-toggle="tooltip" data-placement="bottom" title="Builder of high quality complex software using tools like NodeJs, ReactJs and AWS">Senior Software Architect</h2>
                 </div>
-                 <div><span>|</span></div>
+                 <div><span>@</span></div>
                 <div>
-                  <h4 id="hire-me" data-toggle="tooltip" data-placement="bottom" title="Looking for a fulltime permanent role building great software!"><span style="color: lightyellow;">Available for Hire! <i class="fa fa-globe" title="remote"></i></span></h4>
+                  <!-- <h4 id="hire-me" data-toggle="tooltip" data-placement="bottom" title="Looking for a fulltime permanent role building great software!"><span style="color: lightyellow;">Available for Hire! <i class="fa fa-globe" title="remote"></i></span></h4> -->
+                  <h4 data-toggle="tooltip" data-placement="bottom" title="Working remotely here"><span style="color: lightyellow;">Innosphere <i class="fa fa-globe" title="remote"></i></span></h4>
                 </div>
               </div>
             </div>
@@ -156,9 +159,9 @@
             </div>
             <div class="center-div">
               <div>
-                <span><i class="fa fa-map-marker" id="map-marker" aria-hidden="true"></i> Ontario. Canada</span>
+                <span><i class="fa fa-map-marker" id="map-marker" aria-hidden="true"></i> Ontario, Canada</span>
                 <div>
-                  <span>Senior Software Engineer Team Lead</span>
+                  <span><b>Senior Software Architect</b></span>
                 </div>
                 <div>
                   <span title="Eastern Standard Timezone"><i class="fa fa-clock-o" id="clock" aria-hidden="true"></i> EST</span><span> - </span><span>Remote (US or CA)</span>
@@ -200,7 +203,7 @@
       </div>
       <div class="col-md-8">
         <h2>Who Am I?</h2>
-        <p>I am a Senior Software Engineer Team Lead with over <span id="years-experience">9</span> years of experience, specializing in full-stack development. My expertise lies in architecting and implementing scalable systems with RESTful APIs and microservices using NodeJS for backend development. On the frontend, I leverage ReactJS to create responsive and modern user interfaces.</p>
+        <p>I am a Senior Software Architect with over <span id="years-experience">9</span> years of experience, specializing in full-stack development. My expertise lies in architecting and implementing scalable systems with RESTful APIs and microservices using NodeJS for backend development. On the frontend, I leverage ReactJS to create responsive and modern user interfaces.</p>
         <p>I am committed to maintaining high-quality code through Test-Driven Development (TDD) and automated testing frameworks. My proficiency in DevOps allows me to seamlessly deploy applications on serverless AWS infrastructure, utilizing services such as Lambda, S3, SQS, and CloudFormation for robust and scalable solutions.</p>
         <p>As a proactive leader and quick learner, I excel in taking ownership of software projects from conception to deployment. I am passionate about understanding existing systems, identifying areas for improvement, and driving innovation. My leadership style emphasizes mentoring and collaboration, ensuring team members grow and thrive. I am dedicated to sharing my knowledge and fostering a culture of continuous learning and excellence.</p>
         <h2>My Core Toolset</h2>
@@ -222,9 +225,16 @@
         <h2>Career</h2>
         <div id="events-container">
           <div class="career-event">
+            <div class="info-container innosphere">
+              <div id="place">Innosphere</div>
+              <div id="position">Senior Software Architect</br>(NodeJS, AWS, Ruby on Rails)<br></div>
+              <div id="info-icon-container"><span class="fa fa-globe"></span></div>
+            </div>
+          </div>
+          <div class="career-event">
             <div class="info-container augmentt">
               <div id="place">Augmentt</div>
-              <div id="position">Senior Software Engineer Team Lead - Top code contributor (NodeJS, ReactJS, AWS)<br></div>
+              <div id="position">Senior Software Engineer Team Lead</br>(NodeJS, ReactJS, AWS)<br></div>
               <div id="info-icon-container"><span class="fa fa-globe"></span></div>
             </div>
           </div>
@@ -287,6 +297,9 @@
             <small>(most recent, left to right)</small>
             <div>
               <small>See details on <a href="https://www.linkedin.com/matthewrowlandson">LinkedIn</a></small>
+            </div>
+            <div>
+              <small><span id="years-career"></span>+ years of experience in tech</small>
             </div>
           </div>
         </div>
