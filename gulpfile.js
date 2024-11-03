@@ -38,6 +38,7 @@ gulp.task('webserver', (done) => {
     livereload: true,
     fallback: 'index.html',
     port: port
+    // Doesn't support open anymore. so livereload doesn't really work when we open in the browser. TODO find alternative
   });
   done();
 });
@@ -53,5 +54,7 @@ gulp.task('open-browser', (done) => {
 gulp.task('default', gulp.series('style', 'webserver', 'open-browser', (done) => {
   // Watch Sass files
   gulp.watch("**/*.scss", { cwd: "./src/" }, gulp.series("style"));
+  // Watch HTML files
+  gulp.watch('**/*.html').on('change', () => connect.reload());
   done();
 }));
