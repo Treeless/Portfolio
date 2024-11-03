@@ -1,48 +1,49 @@
-(function() {
-  const gulp = require('gulp'),
-    sass = require('gulp-sass')(require('sass')),
-    cssnano = require('gulp-cssnano'),
-    concat = require('gulp-concat'),
-    autoprefix = require('gulp-autoprefixer'),
-    webserver = require('gulp-webserver'),
-    del = require('del');
+import gulp from 'gulp';
+import { deleteSync } from 'del';
+import gulpSass from 'gulp-sass';
+import cssnano from 'gulp-cssnano';
+import concat from 'gulp-concat';
+import autoprefixer from 'gulp-autoprefixer';
+import gulpWebserver from 'gulp-webserver';
+import * as sassCompiler from 'sass';  // Updated to match the suggested import style
 
-  // Remove the css file
-  gulp.task("clean-css", () => del(["./css/main.css"]));
+const sass = gulpSass(sassCompiler);
 
-  //Compiles scss files to css
-  gulp.task('style', gulp.series("clean-css", function convertSassToCss() {
-    return gulp.src('**/*.scss', {
-        cwd: './src'
-      })
-      .pipe(concat('main.scss'))
-      .pipe(sass().on('error', function sassError(err) {
-        console.log("SASS ERROR: " + err.message);
-      }))
-      .pipe(cssnano())
-      .pipe(autoprefix())
-      .pipe(gulp.dest('./css'));
-  }));
+// Remove the CSS file
+gulp.task("clean-css", (done) => {
+  deleteSync(["./css/main.css"]);
+  done(); // Signal task completion
+});
 
-  //Local webserver
-  gulp.task('webserver', gulp.series(function setupWebserver() {
-    return gulp.src('./')
-      .pipe(webserver({
-        livereload: {
-          enable: true
-        },
-        fallback: 'index.html',
-        open: true,
-        port: 8082
-      }));
-  }));
+// Compiles SCSS files to CSS
+gulp.task('style', gulp.series("clean-css", function convertSassToCss() {
+  return gulp.src('**/*.scss', { cwd: './src' })
+    .pipe(concat('main.scss'))
+    .pipe(sass().on('error', function sassError(err) {
+      console.log("SASS ERROR: " + err.message);
+    }))
+    .pipe(cssnano())
+    .pipe(autoprefixer())
+    .pipe(gulp.dest('./css'));
+}));
 
-  //Default task
-  gulp.task('default', gulp.series('style', 'webserver', (done) => {
+// Local webserver
+gulp.task('webserver', gulp.series(function setupWebserver(done) {
+  gulp.src('./')
+    .pipe(gulpWebserver({
+      livereload: {
+        enable: true
+      },
+      fallback: 'index.html',
+      open: true,
+      port: 8082
+    }));
+  done(); // Signal task completion
+}));
 
-    //Watch sass
-    gulp.watch("**/*.scss", { cwd: "./src/" }, gulp.series("style"))
-
-    done();
-  }));
-}()); 
+// Default task
+gulp.task('default', gulp.series('style', 'webserver', (done) => {
+  // Watch Sass files
+  gulp.watch("**/*.scss", { cwd: "./src/" }, gulp.series("style"));
+  done(); // Signal task completion
+}));
