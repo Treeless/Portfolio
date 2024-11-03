@@ -1,6 +1,6 @@
 (function() {
-  var gulp = require('gulp'),
-    sass = require('gulp-sass'),
+  const gulp = require('gulp'),
+    sass = require('gulp-sass')(require('sass')),
     cssnano = require('gulp-cssnano'),
     concat = require('gulp-concat'),
     autoprefix = require('gulp-autoprefixer'),
